@@ -1,15 +1,19 @@
-import React from "react";
-import '../styles/navbar.css';
-import { Button } from "bootstrap";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import '../styles/navbar.css'
 
-function Navbar() {
-    return (
-        <div className="navbuttons">
-            <Button className="about">About</Button>
-            <Button className="projects">Projects</Button>
-            <Button className="hire">Hire</Button>
-        </div>
+
+function NavComp() {
+  return (
+    <Navbar expand="lg" className="bg-body-tertiary">
+    <Container className='navbar'>
+     <Nav.Link>About</Nav.Link>
+     <Nav.Link>Projects</Nav.Link>
+     <Nav.Link>Hire</Nav.Link>
+    </Container>
+  </Navbar>
   );
 }
 
-export default Navbar;
+export default NavComp;
